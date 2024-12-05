@@ -1,0 +1,234 @@
+.booking-panel {
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: 1fr 3fr;
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 1px 0px 23px 3px rgba(0, 0, 0, 0.45);
+    -webkit-box-shadow: 1px 0px 23px 3px rgba(0, 0, 0, 0.45);
+    -moz-box-shadow: 1px 0px 23px 3px rgba(0, 0, 0, 0.45);
+    transition: all 0.7s ease;
+    width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+
+.movie-box {
+    position: relative;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    flex-shrink: 0;
+    overflow: hidden; 
+
+  }
+  
+.movie-box img {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.booking-panel-section2>i {
+    background-color: #b6b6b6;
+    color: #fff;
+    padding: 15px;
+    float: right;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.booking-panel-section2>i:hover {
+    color: rgb(139, 139, 139);
+}
+
+.booking-panel-section3>.movie-box {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.booking-panel-section3 img {
+    max-width: 100%;
+}
+
+.booking-panel-section3>.movie-box {
+    margin: 0;
+}
+
+.booking-panel-section4 {
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: #fff;
+}
+
+.booking-panel-section4>.title {
+    border-bottom: #969696 1px solid;
+    color: #001F3F;
+    padding: 0 0 15px 0;
+    margin: 0 0 15px 0;
+    font-size: 24pt;
+    padding: 35px 35px 20px 35px;
+    font-weight: bold;
+}
+
+.movie-information>table {
+    padding: 0 35px 0 35px;
+}
+
+.movie-information td {
+    padding: 8px 25px 8px 0;
+    text-align: left;
+    color: #969696;
+}
+
+.movie-information table tr td:first-child {
+    color: #585858;
+    font-weight: bold;
+}
+
+.booking-form-container {
+    background-color: #EAD8B1;
+    width: 100%;
+    padding: 25px;
+    margin: 20px 0;
+}
+
+
+
+.booking-form-container form {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.booking-form-container form button {
+    border-radius: 4px;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    float: right;
+    width: 25%;
+    text-align: center;
+    background-color: #0E21A0;
+    color: #fff;
+    transition: all 0.7s ease;
+    cursor: pointer;
+    height: 42px;
+}
+
+.booking-form-container form button:hover {
+    background-color: #059212;
+}
+
+.booking-form-container form select {
+    padding: 10px;
+    background: #fff url("#") no-repeat calc(100% - 10px) 50%;
+    box-sizing: border-box;
+    border: solid 2px #cbcbcb;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    color: #606060;
+    text-indent: 0.01px;
+    text-overflow: "";
+    width: 23%;
+    height: 42px;
+    margin: 5px 0;
+}
+
+.booking-form-container form input {
+    border-radius: 4px;
+    border: 1px solid #6e6e6e;
+    padding: 10px;
+    width: 31%;
+    height: 42px;
+    margin: 5px 0;
+}
+
+/* Schedule Styling */
+
+.schedule-section {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.schedule-section>h1 {
+    padding: 0 0 20px 0;
+    margin: 0 0 40px 0;
+    border-bottom: 1px solid #bdbdbd;
+    color: #6e5a11;
+}
+
+.schedule-dates {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.schedule-item {
+    padding: 15px;
+    background-color: #006BFF;
+    margin-right: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.schedule-item:hover {
+    background-color: #b6b6b6;
+    color: #006BFF;
+}
+
+.schedule-item-selected {
+    color: #006BFF;
+    background-color: #b6b6b6;
+    cursor: auto;
+}
+
+.schedule-table table {
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.schedule-table table tr th {
+    padding: 10px 0 10px 40px;
+    background-color: #16423C;
+    border: 1px solid #b6b6b6;
+    color: #fff;
+}
+
+.schedule-table table tr th:first-child {
+    width: 35%;
+    border-right: 1px solid #bdbdbd;
+}
+
+.schedule-table table tr td {
+    padding: 40px;
+    border: 1px solid #bdbdbd;
+}
+
+.schedule-table table tr td>h2 {
+    margin: 0 0 15px 0px;
+}
+
+.schedule-table table tr td>h3 {
+    margin: 15px 0px;
+}
+
+.schedule-table table tr td>p {
+    margin: 0 0 15px 0px;
+}
+
+.schedule-table table tr td>i {
+    margin: 0 10px;
+}
+
+.schedule-table table tr td>.schedule-item {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bold;
+}
+

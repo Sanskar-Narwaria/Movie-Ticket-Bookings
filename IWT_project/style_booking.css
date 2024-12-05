@@ -1,0 +1,90 @@
+html, body {
+    min-width: 720px;
+    
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.movie-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+.movie-info h2 {
+    margin: 0;
+}
+.booking-form {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.seat-selection {
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #f4f4f4;
+    width: 720px;
+}
+
+.screen {
+    background-color: #ddd;
+    margin-bottom: 10px;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+.seats-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.seat {
+    width: 30px;
+    height: 30px;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    padding-top: 6px;
+}
+.seat.selected {
+    background-color: green;
+}
+.seat.occupied {
+    background-color: red;
+}
+.seat.unavailable {
+    background-color: #ccc;
+    pointer-events: none;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}

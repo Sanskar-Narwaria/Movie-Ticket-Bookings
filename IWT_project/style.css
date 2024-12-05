@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    line-height: 1.6;
+}
+
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3, p {
+    margin-bottom: 10px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    position: relative; 
+}
+
+header .welcome {
+    flex-grow: 1; 
+    text-align: center; 
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+.hero {
+    position: relative;
+    color: #fff;
+    height: 120vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    background-image: url('poster_img.jpg'); 
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h2{
+    color: white; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
+    font-size: 50px; 
+}
+.hero p{
+    color: white; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
+    font-size: 20px; 
+}
+
+
+.hero .container {
+    z-index: 2; 
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+}
+
+
+
+
+
+
+
+.movies-section {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+}
+
+.movies-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+}
+
+.movies-wrapper {
+    overflow-x: auto;
+    padding-bottom: 20px;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+}
+
+.movies-wrapper::-webkit-scrollbar {
+    display: none;  
+}
+
+
+.movies-container {
+    display: grid;
+    grid-gap: 20px; 
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive layout */
+    padding: 10px 0;
+}
+
+.movie-box {
+    position: relative;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; 
+    overflow: hidden;
+}
+
+.movie-box img {
+    display: block;
+    width: 100%; 
+    height: 100%;
+}
+
+.movie-box .movie-info {
+    padding: 50% 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.7s ease;
+    background-color: rgb(0, 0, 0);
+}
+
+.movie-box:hover .movie-info {
+    opacity: 0.8;
+}
+
+.movie-info > h3 {
+    padding: 10px 0;
+    color: #fff;
+}
+
+.movie-info > p {
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.movie-info > a {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #ffffff;
+    border-radius: 0.13em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.movie-info > a:hover {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero h2{
+        font-size: 30px; 
+    }
+
+    .hero p{
+        font-size: 15px; 
+    }
+
+
+
+}
+
+@media (max-width: 480px) {
+    header .logo {
+        font-size: 20px;
+    }
+
+
+
+    .movie-card h3 {
+        font-size: 20px;
+    }
+
+
+}
+
+
+.user-auth {
+    margin-left: auto; 
+}
+
+.user-auth p{
+    display: inline-block;
+}
+
+.user-btn, .sign-in-btn {
+    display: inline-block;
+    background-color: #83B4FF; 
+    color: #fff; 
+    border: none; 
+    padding: 10px 15px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease; 
+    text-decoration: none; 
+}
+
+.user-btn:hover, .sign-in-btn:hover {
+    background-color: #3572EF;
+}
